@@ -1,0 +1,4 @@
+(executable
+ (public_name effectful_coverage_type)
+ (name main)
+ (libraries examples))

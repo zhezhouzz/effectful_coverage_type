@@ -1,0 +1,8 @@
+(library
+ (name utils)
+ (modules
+   utils
+ )
+ (preprocess (pps ppx_optcomp ppx_compare ppx_sexp_conv))
+ (libraries core)
+)

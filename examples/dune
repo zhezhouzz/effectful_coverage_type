@@ -1,0 +1,20 @@
+(library
+ (name examples)
+ ; (modules_without_implementation kv_store_sig)
+ (modules
+   kv_store_sig
+   kv_store_lib
+   kv_store
+   locks_sig
+   locks_lib
+   locks
+   db_init_sig
+   db_init_lib
+   db_init
+   maze_sig
+   maze_lib
+   maze
+ )
+ (preprocess (pps ppx_optcomp ppx_compare ppx_sexp_conv))
+ (libraries core utils)
+)
